@@ -57,7 +57,7 @@ def clean_text(text):
 
 	# remove as many non-english characters and character sequences as you can 
 	for c in unique_chars:
-	    if c not in string.ascii_lowercase+""",.:!?;"'()""":
+	    if c not in string.ascii_lowercase+""",.:!?; """:
 	        text = text.replace(c, ' ')
 	    
 	# shorten any extra dead space created above
